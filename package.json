@@ -1,0 +1,38 @@
+{
+  "name": "threeshaders",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradLyman/threeShaders.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BradLyman/threeShaders/issues"
+  },
+  "homepage": "https://github.com/BradLyman/threeShaders#readme",
+  "dependencies": {
+    "history": "^1.13.1",
+    "react": "^0.14.2",
+    "react-and-three": "git+https://github.com/BradLyman/reactAndThree.git",
+    "react-dom": "^0.14.2",
+    "react-router": "^1.0.0",
+    "three": "^0.73.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-transform-react-jsx": "^6.1.18",
+    "html-webpack-plugin": "^1.6.2",
+    "webpack": "^1.12.6",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
